@@ -1,0 +1,92 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.784745",
+   "Default View_TopLeft":"1,-148",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 10 -x 3580 -y 920 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 10 -x 3580 -y 940 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 9 -x 3340 -y 970 -defaultsOSRD
+preplace inst vector_add_dma_A -pg 1 -lvl 3 -x 910 -y 540 -defaultsOSRD
+preplace inst vector_add -pg 1 -lvl 5 -x 1840 -y 550 -defaultsOSRD
+preplace inst axis_broadcaster_A -pg 1 -lvl 4 -x 1300 -y 210 -defaultsOSRD
+preplace inst axis_broadcaster_B -pg 1 -lvl 4 -x 1300 -y 700 -defaultsOSRD
+preplace inst vector_add_dma_B -pg 1 -lvl 7 -x 2610 -y 680 -defaultsOSRD
+preplace inst axis_combiner_0 -pg 1 -lvl 6 -x 2240 -y 560 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 200 -y 530 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 8 -x 2990 -y 950 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 550 -y 450 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 10 20 430 380 280 710 280 1120 910 1530 960 2020 790 2400 810 2800 1130 3140 1080 3540
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 10 10 260 NJ 260 NJ 260 1110J 450 1480J 150 NJ 150 NJ 150 NJ 150 NJ 150 3550
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 7 390 270 720 270 1130 920 1630 970 2030 800 2410 800 2810
+preplace netloc processing_system7_0_FIXED_IO 1 9 1 NJ 940
+preplace netloc processing_system7_0_DDR 1 9 1 NJ 920
+preplace netloc vector_add_dma_A_M_AXIS_MM2S 1 3 1 1090 190n
+preplace netloc vector_add_out_data_0 1 5 1 N 390
+preplace netloc vector_add_out_data_1 1 5 1 N 410
+preplace netloc vector_add_out_data_2 1 5 1 N 430
+preplace netloc vector_add_out_data_3 1 5 1 N 450
+preplace netloc vector_add_out_data_4 1 5 1 N 470
+preplace netloc vector_add_out_data_5 1 5 1 N 490
+preplace netloc vector_add_out_data_6 1 5 1 N 510
+preplace netloc vector_add_out_data_7 1 5 1 N 530
+preplace netloc vector_add_out_data_8 1 5 1 N 550
+preplace netloc vector_add_out_data_9 1 5 1 N 570
+preplace netloc vector_add_out_data_10 1 5 1 N 590
+preplace netloc vector_add_out_data_11 1 5 1 N 610
+preplace netloc vector_add_out_data_12 1 5 1 N 630
+preplace netloc vector_add_out_data_13 1 5 1 N 650
+preplace netloc vector_add_out_data_14 1 5 1 N 670
+preplace netloc vector_add_out_data_15 1 5 1 N 690
+preplace netloc axis_combiner_0_M_AXIS 1 6 1 2400 560n
+preplace netloc axis_broadcaster_A_M00_AXIS 1 4 1 1640 60n
+preplace netloc axis_broadcaster_A_M01_AXIS 1 4 1 1630 80n
+preplace netloc axis_broadcaster_A_M02_AXIS 1 4 1 1620 100n
+preplace netloc axis_broadcaster_A_M03_AXIS 1 4 1 1510 120n
+preplace netloc axis_broadcaster_A_M04_AXIS 1 4 1 1500 140n
+preplace netloc axis_broadcaster_A_M05_AXIS 1 4 1 1610 160n
+preplace netloc axis_broadcaster_A_M06_AXIS 1 4 1 1600 180n
+preplace netloc axis_broadcaster_A_M07_AXIS 1 4 1 1590 200n
+preplace netloc axis_broadcaster_A_M08_AXIS 1 4 1 1570 220n
+preplace netloc axis_broadcaster_A_M09_AXIS 1 4 1 1550 240n
+preplace netloc axis_broadcaster_A_M10_AXIS 1 4 1 1540 260n
+preplace netloc axis_broadcaster_A_M11_AXIS 1 4 1 1520 280n
+preplace netloc axis_broadcaster_A_M12_AXIS 1 4 1 1510 300n
+preplace netloc axis_broadcaster_A_M13_AXIS 1 4 1 1500 320n
+preplace netloc axis_broadcaster_A_M14_AXIS 1 4 1 1490 340n
+preplace netloc axis_broadcaster_A_M15_AXIS 1 4 1 1460 360n
+preplace netloc axis_broadcaster_B_M00_AXIS 1 4 1 N 550
+preplace netloc axis_broadcaster_B_M01_AXIS 1 4 1 N 570
+preplace netloc axis_broadcaster_B_M02_AXIS 1 4 1 N 590
+preplace netloc axis_broadcaster_B_M03_AXIS 1 4 1 N 610
+preplace netloc axis_broadcaster_B_M04_AXIS 1 4 1 N 630
+preplace netloc axis_broadcaster_B_M05_AXIS 1 4 1 N 650
+preplace netloc axis_broadcaster_B_M06_AXIS 1 4 1 N 670
+preplace netloc axis_broadcaster_B_M07_AXIS 1 4 1 N 690
+preplace netloc axis_broadcaster_B_M08_AXIS 1 4 1 N 710
+preplace netloc axis_broadcaster_B_M09_AXIS 1 4 1 N 730
+preplace netloc axis_broadcaster_B_M10_AXIS 1 4 1 N 750
+preplace netloc axis_broadcaster_B_M11_AXIS 1 4 1 N 770
+preplace netloc axis_broadcaster_B_M12_AXIS 1 4 1 N 790
+preplace netloc axis_broadcaster_B_M13_AXIS 1 4 1 N 810
+preplace netloc axis_broadcaster_B_M14_AXIS 1 4 1 N 830
+preplace netloc axis_broadcaster_B_M15_AXIS 1 4 1 N 850
+preplace netloc vector_add_dma_B_M_AXIS_MM2S 1 3 5 1140 950 NJ 950 NJ 950 NJ 950 2790
+preplace netloc vector_add_dma_A_M_AXI_MM2S 1 3 5 1100J 460 1580J 140 NJ 140 NJ 140 2840
+preplace netloc axi_mem_intercon_M00_AXI 1 8 1 N 950
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 9 400 290 NJ 290 1100J 420 1530J 120 NJ 120 NJ 120 NJ 120 NJ 120 3560
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 3 NJ 430 NJ 430 1470
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 700 450n
+preplace netloc ps7_0_axi_periph_M02_AXI 1 2 5 730J 440 NJ 440 1560J 130 NJ 130 2410
+preplace netloc vector_add_dma_B_M_AXI_MM2S 1 7 1 2830 620n
+preplace netloc vector_add_dma_B_M_AXI_S2MM 1 7 1 2820 640n
+levelinfo -pg 1 -10 200 550 910 1300 1840 2240 2610 2990 3340 3580
+pagesize -pg 1 -db -bbox -sgen -10 0 3700 1150
+"
+}
+{
+   "da_axi4_cnt":"14",
+   "da_clkrst_cnt":"3",
+   "da_ps7_cnt":"3"
+}

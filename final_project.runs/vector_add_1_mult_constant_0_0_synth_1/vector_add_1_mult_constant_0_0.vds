@@ -1,0 +1,1210 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Oct  3 13:42:32 2020
+# Process ID: 1713989
+# Current directory: /home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.runs/vector_add_1_mult_constant_0_0_synth_1
+# Command line: vivado -log vector_add_1_mult_constant_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vector_add_1_mult_constant_0_0.tcl
+# Log file: /home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.runs/vector_add_1_mult_constant_0_0_synth_1/vector_add_1_mult_constant_0_0.vds
+# Journal file: /home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.runs/vector_add_1_mult_constant_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source vector_add_1_mult_constant_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/overlay_tutorial/ip/scalar_add_copy/my_scalar_add/solution1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/ip/mult_constant/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'.
+Command: synth_design -top vector_add_1_mult_constant_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1714128 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2004.859 ; gain = 201.520 ; free physical = 587 ; free virtual = 13189
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'vector_add_1_mult_constant_0_0' [/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.srcs/sources_1/bd/vector_add_1/ip/vector_add_1_mult_constant_0_0/synth/vector_add_1_mult_constant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'mult_constant' [/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.srcs/sources_1/bd/vector_add_1/ipshared/98f0/hdl/verilog/mult_constant.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state6 bound to: 4'b1000 
+	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_AXILITES_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.srcs/sources_1/bd/vector_add_1/ipshared/98f0/hdl/verilog/mult_constant.v:968]
+INFO: [Synth 8-6157] synthesizing module 'mult_constant_AXILiteS_s_axi' [/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.srcs/sources_1/bd/vector_add_1/ipshared/98f0/hdl/verilog/mult_constant_AXILiteS_s_axi.v:6]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 5'b00000 
+	Parameter ADDR_GIE bound to: 5'b00100 
+	Parameter ADDR_IER bound to: 5'b01000 
+	Parameter ADDR_ISR bound to: 5'b01100 
+	Parameter ADDR_CONSTANT_V_DATA_0 bound to: 5'b10000 
+	Parameter ADDR_CONSTANT_V_CTRL bound to: 5'b10100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 5 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.srcs/sources_1/bd/vector_add_1/ipshared/98f0/hdl/verilog/mult_constant_AXILiteS_s_axi.v:191]
+INFO: [Synth 8-6155] done synthesizing module 'mult_constant_AXILiteS_s_axi' (1#1) [/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.srcs/sources_1/bd/vector_add_1/ipshared/98f0/hdl/verilog/mult_constant_AXILiteS_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'regslice_both' [/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.srcs/sources_1/bd/vector_add_1/ipshared/98f0/hdl/verilog/regslice_core.v:8]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter W bound to: 33 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ibuf' [/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.srcs/sources_1/bd/vector_add_1/ipshared/98f0/hdl/verilog/regslice_core.v:372]
+	Parameter W bound to: 33 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ibuf' (2#1) [/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.srcs/sources_1/bd/vector_add_1/ipshared/98f0/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6157] synthesizing module 'obuf' [/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.srcs/sources_1/bd/vector_add_1/ipshared/98f0/hdl/verilog/regslice_core.v:402]
+	Parameter W bound to: 33 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'obuf' (3#1) [/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.srcs/sources_1/bd/vector_add_1/ipshared/98f0/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'regslice_both' (4#1) [/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.srcs/sources_1/bd/vector_add_1/ipshared/98f0/hdl/verilog/regslice_core.v:8]
+INFO: [Synth 8-6157] synthesizing module 'regslice_both__parameterized0' [/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.srcs/sources_1/bd/vector_add_1/ipshared/98f0/hdl/verilog/regslice_core.v:8]
+	Parameter DataWidth bound to: 4 - type: integer 
+	Parameter W bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ibuf__parameterized0' [/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.srcs/sources_1/bd/vector_add_1/ipshared/98f0/hdl/verilog/regslice_core.v:372]
+	Parameter W bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ibuf__parameterized0' (4#1) [/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.srcs/sources_1/bd/vector_add_1/ipshared/98f0/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6157] synthesizing module 'obuf__parameterized0' [/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.srcs/sources_1/bd/vector_add_1/ipshared/98f0/hdl/verilog/regslice_core.v:402]
+	Parameter W bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'obuf__parameterized0' (4#1) [/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.srcs/sources_1/bd/vector_add_1/ipshared/98f0/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'regslice_both__parameterized0' (4#1) [/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.srcs/sources_1/bd/vector_add_1/ipshared/98f0/hdl/verilog/regslice_core.v:8]
+INFO: [Synth 8-6157] synthesizing module 'regslice_both__parameterized1' [/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.srcs/sources_1/bd/vector_add_1/ipshared/98f0/hdl/verilog/regslice_core.v:8]
+	Parameter DataWidth bound to: 1 - type: integer 
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ibuf__parameterized1' [/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.srcs/sources_1/bd/vector_add_1/ipshared/98f0/hdl/verilog/regslice_core.v:372]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ibuf__parameterized1' (4#1) [/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.srcs/sources_1/bd/vector_add_1/ipshared/98f0/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6157] synthesizing module 'obuf__parameterized1' [/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.srcs/sources_1/bd/vector_add_1/ipshared/98f0/hdl/verilog/regslice_core.v:402]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'obuf__parameterized1' (4#1) [/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.srcs/sources_1/bd/vector_add_1/ipshared/98f0/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'regslice_both__parameterized1' (4#1) [/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.srcs/sources_1/bd/vector_add_1/ipshared/98f0/hdl/verilog/regslice_core.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'mult_constant' (5#1) [/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.srcs/sources_1/bd/vector_add_1/ipshared/98f0/hdl/verilog/mult_constant.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'vector_add_1_mult_constant_0_0' (6#1) [/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.srcs/sources_1/bd/vector_add_1/ip/vector_add_1_mult_constant_0_0/synth/vector_add_1_mult_constant_0_0.v:57]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2074.547 ; gain = 271.207 ; free physical = 761 ; free virtual = 13366
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2080.484 ; gain = 277.145 ; free physical = 711 ; free virtual = 13315
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2080.484 ; gain = 277.145 ; free physical = 711 ; free virtual = 13315
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2080.484 ; gain = 0.000 ; free physical = 617 ; free virtual = 13221
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.srcs/sources_1/bd/vector_add_1/ip/vector_add_1_mult_constant_0_0/constraints/mult_constant_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.srcs/sources_1/bd/vector_add_1/ip/vector_add_1_mult_constant_0_0/constraints/mult_constant_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.runs/vector_add_1_mult_constant_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.runs/vector_add_1_mult_constant_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2242.195 ; gain = 0.000 ; free physical = 468 ; free virtual = 13072
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.19 . Memory (MB): peak = 2252.102 ; gain = 9.906 ; free physical = 446 ; free virtual = 13051
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 2252.102 ; gain = 448.762 ; free physical = 540 ; free virtual = 13154
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 2252.102 ; gain = 448.762 ; free physical = 540 ; free virtual = 13154
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.runs/vector_add_1_mult_constant_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 2252.102 ; gain = 448.762 ; free physical = 538 ; free virtual = 13152
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'mult_constant_AXILiteS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'mult_constant_AXILiteS_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'mult_constant_AXILiteS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'mult_constant_AXILiteS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 2252.102 ; gain = 448.762 ; free physical = 476 ; free virtual = 13091
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 16    
+	   2 Input     10 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               33 Bit    Registers := 96    
+	               32 Bit    Registers := 20    
+	               10 Bit    Registers := 1     
+	                5 Bit    Registers := 193   
+	                4 Bit    Registers := 33    
+	                2 Bit    Registers := 721   
+	                1 Bit    Registers := 77    
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 48    
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 96    
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   3 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 529   
+	   4 Input      2 Bit        Muxes := 336   
+	   2 Input      1 Bit        Muxes := 1349  
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module mult_constant_AXILiteS_s_axi 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module ibuf 
+Detailed RTL Component Info : 
++---Registers : 
+	               33 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module obuf 
+Detailed RTL Component Info : 
++---Registers : 
+	               33 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module regslice_both 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ibuf__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module obuf__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module regslice_both__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ibuf__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module obuf__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module regslice_both__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module mult_constant 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 16    
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 18    
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 33    
+	                1 Bit    Registers := 69    
++---Muxes : 
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/add_ln17_fu_2409_p2_inferred/\i_0_0_reg_1704_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/add_ln17_fu_2409_p2_inferred/\i_0_0_reg_1704_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/add_ln17_fu_2409_p2_inferred/\i_0_0_reg_1704_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/add_ln17_fu_2409_p2_inferred/\i_0_0_reg_1704_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module mult_constant_AXILiteS_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module mult_constant_AXILiteS_s_axi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 2252.102 ; gain = 448.762 ; free physical = 439 ; free virtual = 12788
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 2252.102 ; gain = 448.762 ; free physical = 2550 ; free virtual = 14893
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 2252.102 ; gain = 448.762 ; free physical = 3269 ; free virtual = 15612
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 2252.102 ; gain = 448.762 ; free physical = 3052 ; free virtual = 15404
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 2252.102 ; gain = 448.762 ; free physical = 2583 ; free virtual = 14935
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 2252.102 ; gain = 448.762 ; free physical = 2579 ; free virtual = 14931
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 2252.102 ; gain = 448.762 ; free physical = 2521 ; free virtual = 14873
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 2252.102 ; gain = 448.762 ; free physical = 2498 ; free virtual = 14850
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 2252.102 ; gain = 448.762 ; free physical = 2448 ; free virtual = 14800
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 2252.102 ; gain = 448.762 ; free physical = 2445 ; free virtual = 14797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |   128|
+|2     |LUT1   |     2|
+|3     |LUT2   |   236|
+|4     |LUT3   |  2533|
+|5     |LUT4   |   888|
+|6     |LUT5   |   230|
+|7     |LUT6   |   171|
+|8     |FDRE   |  5218|
+|9     |FDSE   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------------------------------+----------------------------------+------+
+|      |Instance                                |Module                            |Cells |
++------+----------------------------------------+----------------------------------+------+
+|1     |top                                     |                                  |  9407|
+|2     |  inst                                  |mult_constant                     |  9407|
+|3     |    mult_constant_AXILiteS_s_axi_U      |mult_constant_AXILiteS_s_axi      |   152|
+|4     |    regslice_both_in_data_A_0_data_V_U  |regslice_both                     |   172|
+|5     |      ibuf_inst                         |ibuf_709                          |    67|
+|6     |      obuf_inst                         |obuf_710                          |   105|
+|7     |    regslice_both_in_data_A_10_data_V_U |regslice_both_0                   |   173|
+|8     |      ibuf_inst                         |ibuf_707                          |    67|
+|9     |      obuf_inst                         |obuf_708                          |   106|
+|10    |    regslice_both_in_data_A_11_data_V_U |regslice_both_1                   |   172|
+|11    |      ibuf_inst                         |ibuf_705                          |    67|
+|12    |      obuf_inst                         |obuf_706                          |   105|
+|13    |    regslice_both_in_data_A_12_data_V_U |regslice_both_2                   |   173|
+|14    |      ibuf_inst                         |ibuf_703                          |    67|
+|15    |      obuf_inst                         |obuf_704                          |   106|
+|16    |    regslice_both_in_data_A_13_data_V_U |regslice_both_3                   |   182|
+|17    |      ibuf_inst                         |ibuf_701                          |    67|
+|18    |      obuf_inst                         |obuf_702                          |   115|
+|19    |    regslice_both_in_data_A_14_data_V_U |regslice_both_4                   |   172|
+|20    |      ibuf_inst                         |ibuf_699                          |    67|
+|21    |      obuf_inst                         |obuf_700                          |   105|
+|22    |    regslice_both_in_data_A_15_data_V_U |regslice_both_5                   |   173|
+|23    |      ibuf_inst                         |ibuf_697                          |    67|
+|24    |      obuf_inst                         |obuf_698                          |   106|
+|25    |    regslice_both_in_data_A_1_data_V_U  |regslice_both_6                   |   172|
+|26    |      ibuf_inst                         |ibuf_695                          |    67|
+|27    |      obuf_inst                         |obuf_696                          |   105|
+|28    |    regslice_both_in_data_A_2_data_V_U  |regslice_both_7                   |   172|
+|29    |      ibuf_inst                         |ibuf_693                          |    67|
+|30    |      obuf_inst                         |obuf_694                          |   105|
+|31    |    regslice_both_in_data_A_3_data_V_U  |regslice_both_8                   |   172|
+|32    |      ibuf_inst                         |ibuf_691                          |    67|
+|33    |      obuf_inst                         |obuf_692                          |   105|
+|34    |    regslice_both_in_data_A_4_data_V_U  |regslice_both_9                   |   172|
+|35    |      ibuf_inst                         |ibuf_689                          |    67|
+|36    |      obuf_inst                         |obuf_690                          |   105|
+|37    |    regslice_both_in_data_A_5_data_V_U  |regslice_both_10                  |   172|
+|38    |      ibuf_inst                         |ibuf_687                          |    67|
+|39    |      obuf_inst                         |obuf_688                          |   105|
+|40    |    regslice_both_in_data_A_6_data_V_U  |regslice_both_11                  |   172|
+|41    |      ibuf_inst                         |ibuf_685                          |    67|
+|42    |      obuf_inst                         |obuf_686                          |   105|
+|43    |    regslice_both_in_data_A_7_data_V_U  |regslice_both_12                  |   173|
+|44    |      ibuf_inst                         |ibuf_683                          |    67|
+|45    |      obuf_inst                         |obuf_684                          |   106|
+|46    |    regslice_both_in_data_A_8_data_V_U  |regslice_both_13                  |   172|
+|47    |      ibuf_inst                         |ibuf_681                          |    67|
+|48    |      obuf_inst                         |obuf_682                          |   105|
+|49    |    regslice_both_in_data_A_9_data_V_U  |regslice_both_14                  |   172|
+|50    |      ibuf_inst                         |ibuf_679                          |    67|
+|51    |      obuf_inst                         |obuf_680                          |   105|
+|52    |    regslice_both_in_data_B_0_data_V_U  |regslice_both_15                  |   106|
+|53    |      ibuf_inst                         |ibuf_677                          |    67|
+|54    |      obuf_inst                         |obuf_678                          |    39|
+|55    |    regslice_both_in_data_B_0_dest_V_U  |regslice_both__parameterized1     |     9|
+|56    |      ibuf_inst                         |ibuf__parameterized1_675          |     5|
+|57    |      obuf_inst                         |obuf__parameterized1_676          |     4|
+|58    |    regslice_both_in_data_B_0_id_V_U    |regslice_both__parameterized1_16  |     9|
+|59    |      ibuf_inst                         |ibuf__parameterized1_673          |     5|
+|60    |      obuf_inst                         |obuf__parameterized1_674          |     4|
+|61    |    regslice_both_in_data_B_0_keep_V_U  |regslice_both__parameterized0     |    18|
+|62    |      ibuf_inst                         |ibuf__parameterized0_671          |    10|
+|63    |      obuf_inst                         |obuf__parameterized0_672          |     8|
+|64    |    regslice_both_in_data_B_0_last_V_U  |regslice_both__parameterized1_17  |     9|
+|65    |      ibuf_inst                         |ibuf__parameterized1_669          |     5|
+|66    |      obuf_inst                         |obuf__parameterized1_670          |     4|
+|67    |    regslice_both_in_data_B_0_strb_V_U  |regslice_both__parameterized0_18  |    18|
+|68    |      ibuf_inst                         |ibuf__parameterized0_667          |    10|
+|69    |      obuf_inst                         |obuf__parameterized0_668          |     8|
+|70    |    regslice_both_in_data_B_0_user_V_U  |regslice_both__parameterized1_19  |     9|
+|71    |      ibuf_inst                         |ibuf__parameterized1_665          |     5|
+|72    |      obuf_inst                         |obuf__parameterized1_666          |     4|
+|73    |    regslice_both_in_data_B_10_data_V_U |regslice_both_20                  |   104|
+|74    |      ibuf_inst                         |ibuf_663                          |    67|
+|75    |      obuf_inst                         |obuf_664                          |    37|
+|76    |    regslice_both_in_data_B_10_dest_V_U |regslice_both__parameterized1_21  |     9|
+|77    |      ibuf_inst                         |ibuf__parameterized1_661          |     5|
+|78    |      obuf_inst                         |obuf__parameterized1_662          |     4|
+|79    |    regslice_both_in_data_B_10_id_V_U   |regslice_both__parameterized1_22  |     9|
+|80    |      ibuf_inst                         |ibuf__parameterized1_659          |     5|
+|81    |      obuf_inst                         |obuf__parameterized1_660          |     4|
+|82    |    regslice_both_in_data_B_10_keep_V_U |regslice_both__parameterized0_23  |    18|
+|83    |      ibuf_inst                         |ibuf__parameterized0_657          |    10|
+|84    |      obuf_inst                         |obuf__parameterized0_658          |     8|
+|85    |    regslice_both_in_data_B_10_last_V_U |regslice_both__parameterized1_24  |     9|
+|86    |      ibuf_inst                         |ibuf__parameterized1_655          |     5|
+|87    |      obuf_inst                         |obuf__parameterized1_656          |     4|
+|88    |    regslice_both_in_data_B_10_strb_V_U |regslice_both__parameterized0_25  |    18|
+|89    |      ibuf_inst                         |ibuf__parameterized0_653          |    10|
+|90    |      obuf_inst                         |obuf__parameterized0_654          |     8|
+|91    |    regslice_both_in_data_B_10_user_V_U |regslice_both__parameterized1_26  |     9|
+|92    |      ibuf_inst                         |ibuf__parameterized1_651          |     5|
+|93    |      obuf_inst                         |obuf__parameterized1_652          |     4|
+|94    |    regslice_both_in_data_B_11_data_V_U |regslice_both_27                  |   104|
+|95    |      ibuf_inst                         |ibuf_649                          |    67|
+|96    |      obuf_inst                         |obuf_650                          |    37|
+|97    |    regslice_both_in_data_B_11_dest_V_U |regslice_both__parameterized1_28  |     9|
+|98    |      ibuf_inst                         |ibuf__parameterized1_647          |     5|
+|99    |      obuf_inst                         |obuf__parameterized1_648          |     4|
+|100   |    regslice_both_in_data_B_11_id_V_U   |regslice_both__parameterized1_29  |     9|
+|101   |      ibuf_inst                         |ibuf__parameterized1_645          |     5|
+|102   |      obuf_inst                         |obuf__parameterized1_646          |     4|
+|103   |    regslice_both_in_data_B_11_keep_V_U |regslice_both__parameterized0_30  |    18|
+|104   |      ibuf_inst                         |ibuf__parameterized0_643          |    10|
+|105   |      obuf_inst                         |obuf__parameterized0_644          |     8|
+|106   |    regslice_both_in_data_B_11_last_V_U |regslice_both__parameterized1_31  |     9|
+|107   |      ibuf_inst                         |ibuf__parameterized1_641          |     5|
+|108   |      obuf_inst                         |obuf__parameterized1_642          |     4|
+|109   |    regslice_both_in_data_B_11_strb_V_U |regslice_both__parameterized0_32  |    18|
+|110   |      ibuf_inst                         |ibuf__parameterized0_639          |    10|
+|111   |      obuf_inst                         |obuf__parameterized0_640          |     8|
+|112   |    regslice_both_in_data_B_11_user_V_U |regslice_both__parameterized1_33  |     9|
+|113   |      ibuf_inst                         |ibuf__parameterized1_637          |     5|
+|114   |      obuf_inst                         |obuf__parameterized1_638          |     4|
+|115   |    regslice_both_in_data_B_12_data_V_U |regslice_both_34                  |   104|
+|116   |      ibuf_inst                         |ibuf_635                          |    67|
+|117   |      obuf_inst                         |obuf_636                          |    37|
+|118   |    regslice_both_in_data_B_12_dest_V_U |regslice_both__parameterized1_35  |     9|
+|119   |      ibuf_inst                         |ibuf__parameterized1_633          |     5|
+|120   |      obuf_inst                         |obuf__parameterized1_634          |     4|
+|121   |    regslice_both_in_data_B_12_id_V_U   |regslice_both__parameterized1_36  |     9|
+|122   |      ibuf_inst                         |ibuf__parameterized1_631          |     5|
+|123   |      obuf_inst                         |obuf__parameterized1_632          |     4|
+|124   |    regslice_both_in_data_B_12_keep_V_U |regslice_both__parameterized0_37  |    18|
+|125   |      ibuf_inst                         |ibuf__parameterized0_629          |    10|
+|126   |      obuf_inst                         |obuf__parameterized0_630          |     8|
+|127   |    regslice_both_in_data_B_12_last_V_U |regslice_both__parameterized1_38  |     9|
+|128   |      ibuf_inst                         |ibuf__parameterized1_627          |     5|
+|129   |      obuf_inst                         |obuf__parameterized1_628          |     4|
+|130   |    regslice_both_in_data_B_12_strb_V_U |regslice_both__parameterized0_39  |    18|
+|131   |      ibuf_inst                         |ibuf__parameterized0_625          |    10|
+|132   |      obuf_inst                         |obuf__parameterized0_626          |     8|
+|133   |    regslice_both_in_data_B_12_user_V_U |regslice_both__parameterized1_40  |     9|
+|134   |      ibuf_inst                         |ibuf__parameterized1_623          |     5|
+|135   |      obuf_inst                         |obuf__parameterized1_624          |     4|
+|136   |    regslice_both_in_data_B_13_data_V_U |regslice_both_41                  |   104|
+|137   |      ibuf_inst                         |ibuf_621                          |    67|
+|138   |      obuf_inst                         |obuf_622                          |    37|
+|139   |    regslice_both_in_data_B_13_dest_V_U |regslice_both__parameterized1_42  |     9|
+|140   |      ibuf_inst                         |ibuf__parameterized1_619          |     5|
+|141   |      obuf_inst                         |obuf__parameterized1_620          |     4|
+|142   |    regslice_both_in_data_B_13_id_V_U   |regslice_both__parameterized1_43  |     9|
+|143   |      ibuf_inst                         |ibuf__parameterized1_617          |     5|
+|144   |      obuf_inst                         |obuf__parameterized1_618          |     4|
+|145   |    regslice_both_in_data_B_13_keep_V_U |regslice_both__parameterized0_44  |    18|
+|146   |      ibuf_inst                         |ibuf__parameterized0_615          |    10|
+|147   |      obuf_inst                         |obuf__parameterized0_616          |     8|
+|148   |    regslice_both_in_data_B_13_last_V_U |regslice_both__parameterized1_45  |     9|
+|149   |      ibuf_inst                         |ibuf__parameterized1_613          |     5|
+|150   |      obuf_inst                         |obuf__parameterized1_614          |     4|
+|151   |    regslice_both_in_data_B_13_strb_V_U |regslice_both__parameterized0_46  |    18|
+|152   |      ibuf_inst                         |ibuf__parameterized0_611          |    10|
+|153   |      obuf_inst                         |obuf__parameterized0_612          |     8|
+|154   |    regslice_both_in_data_B_13_user_V_U |regslice_both__parameterized1_47  |     9|
+|155   |      ibuf_inst                         |ibuf__parameterized1_609          |     5|
+|156   |      obuf_inst                         |obuf__parameterized1_610          |     4|
+|157   |    regslice_both_in_data_B_14_data_V_U |regslice_both_48                  |   104|
+|158   |      ibuf_inst                         |ibuf_607                          |    67|
+|159   |      obuf_inst                         |obuf_608                          |    37|
+|160   |    regslice_both_in_data_B_14_dest_V_U |regslice_both__parameterized1_49  |     9|
+|161   |      ibuf_inst                         |ibuf__parameterized1_605          |     5|
+|162   |      obuf_inst                         |obuf__parameterized1_606          |     4|
+|163   |    regslice_both_in_data_B_14_id_V_U   |regslice_both__parameterized1_50  |     9|
+|164   |      ibuf_inst                         |ibuf__parameterized1_603          |     5|
+|165   |      obuf_inst                         |obuf__parameterized1_604          |     4|
+|166   |    regslice_both_in_data_B_14_keep_V_U |regslice_both__parameterized0_51  |    18|
+|167   |      ibuf_inst                         |ibuf__parameterized0_601          |    10|
+|168   |      obuf_inst                         |obuf__parameterized0_602          |     8|
+|169   |    regslice_both_in_data_B_14_last_V_U |regslice_both__parameterized1_52  |     9|
+|170   |      ibuf_inst                         |ibuf__parameterized1_599          |     5|
+|171   |      obuf_inst                         |obuf__parameterized1_600          |     4|
+|172   |    regslice_both_in_data_B_14_strb_V_U |regslice_both__parameterized0_53  |    18|
+|173   |      ibuf_inst                         |ibuf__parameterized0_597          |    10|
+|174   |      obuf_inst                         |obuf__parameterized0_598          |     8|
+|175   |    regslice_both_in_data_B_14_user_V_U |regslice_both__parameterized1_54  |     9|
+|176   |      ibuf_inst                         |ibuf__parameterized1_595          |     5|
+|177   |      obuf_inst                         |obuf__parameterized1_596          |     4|
+|178   |    regslice_both_in_data_B_15_data_V_U |regslice_both_55                  |   104|
+|179   |      ibuf_inst                         |ibuf_593                          |    67|
+|180   |      obuf_inst                         |obuf_594                          |    37|
+|181   |    regslice_both_in_data_B_15_dest_V_U |regslice_both__parameterized1_56  |     9|
+|182   |      ibuf_inst                         |ibuf__parameterized1_591          |     5|
+|183   |      obuf_inst                         |obuf__parameterized1_592          |     4|
+|184   |    regslice_both_in_data_B_15_id_V_U   |regslice_both__parameterized1_57  |     9|
+|185   |      ibuf_inst                         |ibuf__parameterized1_589          |     5|
+|186   |      obuf_inst                         |obuf__parameterized1_590          |     4|
+|187   |    regslice_both_in_data_B_15_keep_V_U |regslice_both__parameterized0_58  |    18|
+|188   |      ibuf_inst                         |ibuf__parameterized0_587          |    10|
+|189   |      obuf_inst                         |obuf__parameterized0_588          |     8|
+|190   |    regslice_both_in_data_B_15_last_V_U |regslice_both__parameterized1_59  |     9|
+|191   |      ibuf_inst                         |ibuf__parameterized1_585          |     5|
+|192   |      obuf_inst                         |obuf__parameterized1_586          |     4|
+|193   |    regslice_both_in_data_B_15_strb_V_U |regslice_both__parameterized0_60  |    18|
+|194   |      ibuf_inst                         |ibuf__parameterized0_583          |    10|
+|195   |      obuf_inst                         |obuf__parameterized0_584          |     8|
+|196   |    regslice_both_in_data_B_15_user_V_U |regslice_both__parameterized1_61  |     9|
+|197   |      ibuf_inst                         |ibuf__parameterized1_581          |     5|
+|198   |      obuf_inst                         |obuf__parameterized1_582          |     4|
+|199   |    regslice_both_in_data_B_1_data_V_U  |regslice_both_62                  |   105|
+|200   |      ibuf_inst                         |ibuf_579                          |    67|
+|201   |      obuf_inst                         |obuf_580                          |    38|
+|202   |    regslice_both_in_data_B_1_dest_V_U  |regslice_both__parameterized1_63  |     9|
+|203   |      ibuf_inst                         |ibuf__parameterized1_577          |     5|
+|204   |      obuf_inst                         |obuf__parameterized1_578          |     4|
+|205   |    regslice_both_in_data_B_1_id_V_U    |regslice_both__parameterized1_64  |     9|
+|206   |      ibuf_inst                         |ibuf__parameterized1_575          |     5|
+|207   |      obuf_inst                         |obuf__parameterized1_576          |     4|
+|208   |    regslice_both_in_data_B_1_keep_V_U  |regslice_both__parameterized0_65  |    18|
+|209   |      ibuf_inst                         |ibuf__parameterized0_573          |    10|
+|210   |      obuf_inst                         |obuf__parameterized0_574          |     8|
+|211   |    regslice_both_in_data_B_1_last_V_U  |regslice_both__parameterized1_66  |     9|
+|212   |      ibuf_inst                         |ibuf__parameterized1_571          |     5|
+|213   |      obuf_inst                         |obuf__parameterized1_572          |     4|
+|214   |    regslice_both_in_data_B_1_strb_V_U  |regslice_both__parameterized0_67  |    18|
+|215   |      ibuf_inst                         |ibuf__parameterized0_569          |    10|
+|216   |      obuf_inst                         |obuf__parameterized0_570          |     8|
+|217   |    regslice_both_in_data_B_1_user_V_U  |regslice_both__parameterized1_68  |     9|
+|218   |      ibuf_inst                         |ibuf__parameterized1_567          |     5|
+|219   |      obuf_inst                         |obuf__parameterized1_568          |     4|
+|220   |    regslice_both_in_data_B_2_data_V_U  |regslice_both_69                  |   105|
+|221   |      ibuf_inst                         |ibuf_565                          |    67|
+|222   |      obuf_inst                         |obuf_566                          |    38|
+|223   |    regslice_both_in_data_B_2_dest_V_U  |regslice_both__parameterized1_70  |     9|
+|224   |      ibuf_inst                         |ibuf__parameterized1_563          |     5|
+|225   |      obuf_inst                         |obuf__parameterized1_564          |     4|
+|226   |    regslice_both_in_data_B_2_id_V_U    |regslice_both__parameterized1_71  |     9|
+|227   |      ibuf_inst                         |ibuf__parameterized1_561          |     5|
+|228   |      obuf_inst                         |obuf__parameterized1_562          |     4|
+|229   |    regslice_both_in_data_B_2_keep_V_U  |regslice_both__parameterized0_72  |    18|
+|230   |      ibuf_inst                         |ibuf__parameterized0_559          |    10|
+|231   |      obuf_inst                         |obuf__parameterized0_560          |     8|
+|232   |    regslice_both_in_data_B_2_last_V_U  |regslice_both__parameterized1_73  |     9|
+|233   |      ibuf_inst                         |ibuf__parameterized1_557          |     5|
+|234   |      obuf_inst                         |obuf__parameterized1_558          |     4|
+|235   |    regslice_both_in_data_B_2_strb_V_U  |regslice_both__parameterized0_74  |    18|
+|236   |      ibuf_inst                         |ibuf__parameterized0_555          |    10|
+|237   |      obuf_inst                         |obuf__parameterized0_556          |     8|
+|238   |    regslice_both_in_data_B_2_user_V_U  |regslice_both__parameterized1_75  |     9|
+|239   |      ibuf_inst                         |ibuf__parameterized1_553          |     5|
+|240   |      obuf_inst                         |obuf__parameterized1_554          |     4|
+|241   |    regslice_both_in_data_B_3_data_V_U  |regslice_both_76                  |   105|
+|242   |      ibuf_inst                         |ibuf_551                          |    67|
+|243   |      obuf_inst                         |obuf_552                          |    38|
+|244   |    regslice_both_in_data_B_3_dest_V_U  |regslice_both__parameterized1_77  |     9|
+|245   |      ibuf_inst                         |ibuf__parameterized1_549          |     5|
+|246   |      obuf_inst                         |obuf__parameterized1_550          |     4|
+|247   |    regslice_both_in_data_B_3_id_V_U    |regslice_both__parameterized1_78  |     9|
+|248   |      ibuf_inst                         |ibuf__parameterized1_547          |     5|
+|249   |      obuf_inst                         |obuf__parameterized1_548          |     4|
+|250   |    regslice_both_in_data_B_3_keep_V_U  |regslice_both__parameterized0_79  |    18|
+|251   |      ibuf_inst                         |ibuf__parameterized0_545          |    10|
+|252   |      obuf_inst                         |obuf__parameterized0_546          |     8|
+|253   |    regslice_both_in_data_B_3_last_V_U  |regslice_both__parameterized1_80  |     9|
+|254   |      ibuf_inst                         |ibuf__parameterized1_543          |     5|
+|255   |      obuf_inst                         |obuf__parameterized1_544          |     4|
+|256   |    regslice_both_in_data_B_3_strb_V_U  |regslice_both__parameterized0_81  |    18|
+|257   |      ibuf_inst                         |ibuf__parameterized0_541          |    10|
+|258   |      obuf_inst                         |obuf__parameterized0_542          |     8|
+|259   |    regslice_both_in_data_B_3_user_V_U  |regslice_both__parameterized1_82  |     9|
+|260   |      ibuf_inst                         |ibuf__parameterized1_539          |     5|
+|261   |      obuf_inst                         |obuf__parameterized1_540          |     4|
+|262   |    regslice_both_in_data_B_4_data_V_U  |regslice_both_83                  |   105|
+|263   |      ibuf_inst                         |ibuf_537                          |    67|
+|264   |      obuf_inst                         |obuf_538                          |    38|
+|265   |    regslice_both_in_data_B_4_dest_V_U  |regslice_both__parameterized1_84  |     9|
+|266   |      ibuf_inst                         |ibuf__parameterized1_535          |     5|
+|267   |      obuf_inst                         |obuf__parameterized1_536          |     4|
+|268   |    regslice_both_in_data_B_4_id_V_U    |regslice_both__parameterized1_85  |     9|
+|269   |      ibuf_inst                         |ibuf__parameterized1_533          |     5|
+|270   |      obuf_inst                         |obuf__parameterized1_534          |     4|
+|271   |    regslice_both_in_data_B_4_keep_V_U  |regslice_both__parameterized0_86  |    18|
+|272   |      ibuf_inst                         |ibuf__parameterized0_531          |    10|
+|273   |      obuf_inst                         |obuf__parameterized0_532          |     8|
+|274   |    regslice_both_in_data_B_4_last_V_U  |regslice_both__parameterized1_87  |     9|
+|275   |      ibuf_inst                         |ibuf__parameterized1_529          |     5|
+|276   |      obuf_inst                         |obuf__parameterized1_530          |     4|
+|277   |    regslice_both_in_data_B_4_strb_V_U  |regslice_both__parameterized0_88  |    18|
+|278   |      ibuf_inst                         |ibuf__parameterized0_527          |    10|
+|279   |      obuf_inst                         |obuf__parameterized0_528          |     8|
+|280   |    regslice_both_in_data_B_4_user_V_U  |regslice_both__parameterized1_89  |     9|
+|281   |      ibuf_inst                         |ibuf__parameterized1_525          |     5|
+|282   |      obuf_inst                         |obuf__parameterized1_526          |     4|
+|283   |    regslice_both_in_data_B_5_data_V_U  |regslice_both_90                  |   105|
+|284   |      ibuf_inst                         |ibuf_523                          |    67|
+|285   |      obuf_inst                         |obuf_524                          |    38|
+|286   |    regslice_both_in_data_B_5_dest_V_U  |regslice_both__parameterized1_91  |     9|
+|287   |      ibuf_inst                         |ibuf__parameterized1_521          |     5|
+|288   |      obuf_inst                         |obuf__parameterized1_522          |     4|
+|289   |    regslice_both_in_data_B_5_id_V_U    |regslice_both__parameterized1_92  |     9|
+|290   |      ibuf_inst                         |ibuf__parameterized1_519          |     5|
+|291   |      obuf_inst                         |obuf__parameterized1_520          |     4|
+|292   |    regslice_both_in_data_B_5_keep_V_U  |regslice_both__parameterized0_93  |    18|
+|293   |      ibuf_inst                         |ibuf__parameterized0_517          |    10|
+|294   |      obuf_inst                         |obuf__parameterized0_518          |     8|
+|295   |    regslice_both_in_data_B_5_last_V_U  |regslice_both__parameterized1_94  |     9|
+|296   |      ibuf_inst                         |ibuf__parameterized1_515          |     5|
+|297   |      obuf_inst                         |obuf__parameterized1_516          |     4|
+|298   |    regslice_both_in_data_B_5_strb_V_U  |regslice_both__parameterized0_95  |    18|
+|299   |      ibuf_inst                         |ibuf__parameterized0_513          |    10|
+|300   |      obuf_inst                         |obuf__parameterized0_514          |     8|
+|301   |    regslice_both_in_data_B_5_user_V_U  |regslice_both__parameterized1_96  |     9|
+|302   |      ibuf_inst                         |ibuf__parameterized1_511          |     5|
+|303   |      obuf_inst                         |obuf__parameterized1_512          |     4|
+|304   |    regslice_both_in_data_B_6_data_V_U  |regslice_both_97                  |   124|
+|305   |      ibuf_inst                         |ibuf_509                          |    83|
+|306   |      obuf_inst                         |obuf_510                          |    41|
+|307   |    regslice_both_in_data_B_6_dest_V_U  |regslice_both__parameterized1_98  |     9|
+|308   |      ibuf_inst                         |ibuf__parameterized1_507          |     5|
+|309   |      obuf_inst                         |obuf__parameterized1_508          |     4|
+|310   |    regslice_both_in_data_B_6_id_V_U    |regslice_both__parameterized1_99  |     9|
+|311   |      ibuf_inst                         |ibuf__parameterized1_505          |     5|
+|312   |      obuf_inst                         |obuf__parameterized1_506          |     4|
+|313   |    regslice_both_in_data_B_6_keep_V_U  |regslice_both__parameterized0_100 |    18|
+|314   |      ibuf_inst                         |ibuf__parameterized0_503          |    10|
+|315   |      obuf_inst                         |obuf__parameterized0_504          |     8|
+|316   |    regslice_both_in_data_B_6_last_V_U  |regslice_both__parameterized1_101 |     9|
+|317   |      ibuf_inst                         |ibuf__parameterized1_501          |     5|
+|318   |      obuf_inst                         |obuf__parameterized1_502          |     4|
+|319   |    regslice_both_in_data_B_6_strb_V_U  |regslice_both__parameterized0_102 |    18|
+|320   |      ibuf_inst                         |ibuf__parameterized0_499          |    10|
+|321   |      obuf_inst                         |obuf__parameterized0_500          |     8|
+|322   |    regslice_both_in_data_B_6_user_V_U  |regslice_both__parameterized1_103 |     9|
+|323   |      ibuf_inst                         |ibuf__parameterized1_497          |     5|
+|324   |      obuf_inst                         |obuf__parameterized1_498          |     4|
+|325   |    regslice_both_in_data_B_7_data_V_U  |regslice_both_104                 |   104|
+|326   |      ibuf_inst                         |ibuf_495                          |    67|
+|327   |      obuf_inst                         |obuf_496                          |    37|
+|328   |    regslice_both_in_data_B_7_dest_V_U  |regslice_both__parameterized1_105 |     9|
+|329   |      ibuf_inst                         |ibuf__parameterized1_493          |     5|
+|330   |      obuf_inst                         |obuf__parameterized1_494          |     4|
+|331   |    regslice_both_in_data_B_7_id_V_U    |regslice_both__parameterized1_106 |     9|
+|332   |      ibuf_inst                         |ibuf__parameterized1_491          |     5|
+|333   |      obuf_inst                         |obuf__parameterized1_492          |     4|
+|334   |    regslice_both_in_data_B_7_keep_V_U  |regslice_both__parameterized0_107 |    18|
+|335   |      ibuf_inst                         |ibuf__parameterized0_489          |    10|
+|336   |      obuf_inst                         |obuf__parameterized0_490          |     8|
+|337   |    regslice_both_in_data_B_7_last_V_U  |regslice_both__parameterized1_108 |     9|
+|338   |      ibuf_inst                         |ibuf__parameterized1_487          |     5|
+|339   |      obuf_inst                         |obuf__parameterized1_488          |     4|
+|340   |    regslice_both_in_data_B_7_strb_V_U  |regslice_both__parameterized0_109 |    18|
+|341   |      ibuf_inst                         |ibuf__parameterized0_485          |    10|
+|342   |      obuf_inst                         |obuf__parameterized0_486          |     8|
+|343   |    regslice_both_in_data_B_7_user_V_U  |regslice_both__parameterized1_110 |     9|
+|344   |      ibuf_inst                         |ibuf__parameterized1_483          |     5|
+|345   |      obuf_inst                         |obuf__parameterized1_484          |     4|
+|346   |    regslice_both_in_data_B_8_data_V_U  |regslice_both_111                 |   104|
+|347   |      ibuf_inst                         |ibuf_481                          |    67|
+|348   |      obuf_inst                         |obuf_482                          |    37|
+|349   |    regslice_both_in_data_B_8_dest_V_U  |regslice_both__parameterized1_112 |     9|
+|350   |      ibuf_inst                         |ibuf__parameterized1_479          |     5|
+|351   |      obuf_inst                         |obuf__parameterized1_480          |     4|
+|352   |    regslice_both_in_data_B_8_id_V_U    |regslice_both__parameterized1_113 |     9|
+|353   |      ibuf_inst                         |ibuf__parameterized1_477          |     5|
+|354   |      obuf_inst                         |obuf__parameterized1_478          |     4|
+|355   |    regslice_both_in_data_B_8_keep_V_U  |regslice_both__parameterized0_114 |    18|
+|356   |      ibuf_inst                         |ibuf__parameterized0_475          |    10|
+|357   |      obuf_inst                         |obuf__parameterized0_476          |     8|
+|358   |    regslice_both_in_data_B_8_last_V_U  |regslice_both__parameterized1_115 |     9|
+|359   |      ibuf_inst                         |ibuf__parameterized1_473          |     5|
+|360   |      obuf_inst                         |obuf__parameterized1_474          |     4|
+|361   |    regslice_both_in_data_B_8_strb_V_U  |regslice_both__parameterized0_116 |    18|
+|362   |      ibuf_inst                         |ibuf__parameterized0_471          |    10|
+|363   |      obuf_inst                         |obuf__parameterized0_472          |     8|
+|364   |    regslice_both_in_data_B_8_user_V_U  |regslice_both__parameterized1_117 |     9|
+|365   |      ibuf_inst                         |ibuf__parameterized1_469          |     5|
+|366   |      obuf_inst                         |obuf__parameterized1_470          |     4|
+|367   |    regslice_both_in_data_B_9_data_V_U  |regslice_both_118                 |   104|
+|368   |      ibuf_inst                         |ibuf_467                          |    67|
+|369   |      obuf_inst                         |obuf_468                          |    37|
+|370   |    regslice_both_in_data_B_9_dest_V_U  |regslice_both__parameterized1_119 |     9|
+|371   |      ibuf_inst                         |ibuf__parameterized1_465          |     5|
+|372   |      obuf_inst                         |obuf__parameterized1_466          |     4|
+|373   |    regslice_both_in_data_B_9_id_V_U    |regslice_both__parameterized1_120 |     9|
+|374   |      ibuf_inst                         |ibuf__parameterized1_463          |     5|
+|375   |      obuf_inst                         |obuf__parameterized1_464          |     4|
+|376   |    regslice_both_in_data_B_9_keep_V_U  |regslice_both__parameterized0_121 |    18|
+|377   |      ibuf_inst                         |ibuf__parameterized0_461          |    10|
+|378   |      obuf_inst                         |obuf__parameterized0_462          |     8|
+|379   |    regslice_both_in_data_B_9_last_V_U  |regslice_both__parameterized1_122 |     9|
+|380   |      ibuf_inst                         |ibuf__parameterized1_459          |     5|
+|381   |      obuf_inst                         |obuf__parameterized1_460          |     4|
+|382   |    regslice_both_in_data_B_9_strb_V_U  |regslice_both__parameterized0_123 |    18|
+|383   |      ibuf_inst                         |ibuf__parameterized0_457          |    10|
+|384   |      obuf_inst                         |obuf__parameterized0_458          |     8|
+|385   |    regslice_both_in_data_B_9_user_V_U  |regslice_both__parameterized1_124 |     9|
+|386   |      ibuf_inst                         |ibuf__parameterized1_455          |     5|
+|387   |      obuf_inst                         |obuf__parameterized1_456          |     4|
+|388   |    regslice_both_out_data_0_data_V_U   |regslice_both_125                 |   107|
+|389   |      ibuf_inst                         |ibuf_453                          |    66|
+|390   |      obuf_inst                         |obuf_454                          |    36|
+|391   |    regslice_both_out_data_0_dest_V_U   |regslice_both__parameterized1_126 |     9|
+|392   |      ibuf_inst                         |ibuf__parameterized1_451          |     4|
+|393   |      obuf_inst                         |obuf__parameterized1_452          |     5|
+|394   |    regslice_both_out_data_0_id_V_U     |regslice_both__parameterized1_127 |     9|
+|395   |      ibuf_inst                         |ibuf__parameterized1_449          |     4|
+|396   |      obuf_inst                         |obuf__parameterized1_450          |     5|
+|397   |    regslice_both_out_data_0_keep_V_U   |regslice_both__parameterized0_128 |    18|
+|398   |      ibuf_inst                         |ibuf__parameterized0_447          |    10|
+|399   |      obuf_inst                         |obuf__parameterized0_448          |     8|
+|400   |    regslice_both_out_data_0_last_V_U   |regslice_both__parameterized1_129 |     9|
+|401   |      ibuf_inst                         |ibuf__parameterized1_445          |     4|
+|402   |      obuf_inst                         |obuf__parameterized1_446          |     5|
+|403   |    regslice_both_out_data_0_strb_V_U   |regslice_both__parameterized0_130 |    18|
+|404   |      ibuf_inst                         |ibuf__parameterized0_443          |    10|
+|405   |      obuf_inst                         |obuf__parameterized0_444          |     8|
+|406   |    regslice_both_out_data_0_user_V_U   |regslice_both__parameterized1_131 |     9|
+|407   |      ibuf_inst                         |ibuf__parameterized1_441          |     4|
+|408   |      obuf_inst                         |obuf__parameterized1_442          |     5|
+|409   |    regslice_both_out_data_10_data_V_U  |regslice_both_132                 |   108|
+|410   |      ibuf_inst                         |ibuf_439                          |    65|
+|411   |      obuf_inst                         |obuf_440                          |    36|
+|412   |    regslice_both_out_data_10_dest_V_U  |regslice_both__parameterized1_133 |     9|
+|413   |      ibuf_inst                         |ibuf__parameterized1_437          |     4|
+|414   |      obuf_inst                         |obuf__parameterized1_438          |     5|
+|415   |    regslice_both_out_data_10_id_V_U    |regslice_both__parameterized1_134 |     9|
+|416   |      ibuf_inst                         |ibuf__parameterized1_435          |     4|
+|417   |      obuf_inst                         |obuf__parameterized1_436          |     5|
+|418   |    regslice_both_out_data_10_keep_V_U  |regslice_both__parameterized0_135 |    18|
+|419   |      ibuf_inst                         |ibuf__parameterized0_433          |    10|
+|420   |      obuf_inst                         |obuf__parameterized0_434          |     8|
+|421   |    regslice_both_out_data_10_last_V_U  |regslice_both__parameterized1_136 |     9|
+|422   |      ibuf_inst                         |ibuf__parameterized1_431          |     4|
+|423   |      obuf_inst                         |obuf__parameterized1_432          |     5|
+|424   |    regslice_both_out_data_10_strb_V_U  |regslice_both__parameterized0_137 |    18|
+|425   |      ibuf_inst                         |ibuf__parameterized0_429          |    10|
+|426   |      obuf_inst                         |obuf__parameterized0_430          |     8|
+|427   |    regslice_both_out_data_10_user_V_U  |regslice_both__parameterized1_138 |     9|
+|428   |      ibuf_inst                         |ibuf__parameterized1_427          |     4|
+|429   |      obuf_inst                         |obuf__parameterized1_428          |     5|
+|430   |    regslice_both_out_data_11_data_V_U  |regslice_both_139                 |   110|
+|431   |      ibuf_inst                         |ibuf_425                          |    65|
+|432   |      obuf_inst                         |obuf_426                          |    40|
+|433   |    regslice_both_out_data_11_dest_V_U  |regslice_both__parameterized1_140 |     9|
+|434   |      ibuf_inst                         |ibuf__parameterized1_423          |     4|
+|435   |      obuf_inst                         |obuf__parameterized1_424          |     5|
+|436   |    regslice_both_out_data_11_id_V_U    |regslice_both__parameterized1_141 |     9|
+|437   |      ibuf_inst                         |ibuf__parameterized1_421          |     4|
+|438   |      obuf_inst                         |obuf__parameterized1_422          |     5|
+|439   |    regslice_both_out_data_11_keep_V_U  |regslice_both__parameterized0_142 |    18|
+|440   |      ibuf_inst                         |ibuf__parameterized0_419          |    10|
+|441   |      obuf_inst                         |obuf__parameterized0_420          |     8|
+|442   |    regslice_both_out_data_11_last_V_U  |regslice_both__parameterized1_143 |     9|
+|443   |      ibuf_inst                         |ibuf__parameterized1_417          |     4|
+|444   |      obuf_inst                         |obuf__parameterized1_418          |     5|
+|445   |    regslice_both_out_data_11_strb_V_U  |regslice_both__parameterized0_144 |    18|
+|446   |      ibuf_inst                         |ibuf__parameterized0_415          |    10|
+|447   |      obuf_inst                         |obuf__parameterized0_416          |     8|
+|448   |    regslice_both_out_data_11_user_V_U  |regslice_both__parameterized1_145 |     9|
+|449   |      ibuf_inst                         |ibuf__parameterized1_413          |     4|
+|450   |      obuf_inst                         |obuf__parameterized1_414          |     5|
+|451   |    regslice_both_out_data_12_data_V_U  |regslice_both_146                 |   106|
+|452   |      ibuf_inst                         |ibuf_411                          |    65|
+|453   |      obuf_inst                         |obuf_412                          |    36|
+|454   |    regslice_both_out_data_12_dest_V_U  |regslice_both__parameterized1_147 |     9|
+|455   |      ibuf_inst                         |ibuf__parameterized1_409          |     4|
+|456   |      obuf_inst                         |obuf__parameterized1_410          |     5|
+|457   |    regslice_both_out_data_12_id_V_U    |regslice_both__parameterized1_148 |     9|
+|458   |      ibuf_inst                         |ibuf__parameterized1_407          |     4|
+|459   |      obuf_inst                         |obuf__parameterized1_408          |     5|
+|460   |    regslice_both_out_data_12_keep_V_U  |regslice_both__parameterized0_149 |    18|
+|461   |      ibuf_inst                         |ibuf__parameterized0_405          |    10|
+|462   |      obuf_inst                         |obuf__parameterized0_406          |     8|
+|463   |    regslice_both_out_data_12_last_V_U  |regslice_both__parameterized1_150 |     9|
+|464   |      ibuf_inst                         |ibuf__parameterized1_403          |     4|
+|465   |      obuf_inst                         |obuf__parameterized1_404          |     5|
+|466   |    regslice_both_out_data_12_strb_V_U  |regslice_both__parameterized0_151 |    18|
+|467   |      ibuf_inst                         |ibuf__parameterized0_401          |    10|
+|468   |      obuf_inst                         |obuf__parameterized0_402          |     8|
+|469   |    regslice_both_out_data_12_user_V_U  |regslice_both__parameterized1_152 |     9|
+|470   |      ibuf_inst                         |ibuf__parameterized1_399          |     4|
+|471   |      obuf_inst                         |obuf__parameterized1_400          |     5|
+|472   |    regslice_both_out_data_13_data_V_U  |regslice_both_153                 |   106|
+|473   |      ibuf_inst                         |ibuf_397                          |    65|
+|474   |      obuf_inst                         |obuf_398                          |    36|
+|475   |    regslice_both_out_data_13_dest_V_U  |regslice_both__parameterized1_154 |     9|
+|476   |      ibuf_inst                         |ibuf__parameterized1_395          |     4|
+|477   |      obuf_inst                         |obuf__parameterized1_396          |     5|
+|478   |    regslice_both_out_data_13_id_V_U    |regslice_both__parameterized1_155 |     9|
+|479   |      ibuf_inst                         |ibuf__parameterized1_393          |     4|
+|480   |      obuf_inst                         |obuf__parameterized1_394          |     5|
+|481   |    regslice_both_out_data_13_keep_V_U  |regslice_both__parameterized0_156 |    18|
+|482   |      ibuf_inst                         |ibuf__parameterized0_391          |    10|
+|483   |      obuf_inst                         |obuf__parameterized0_392          |     8|
+|484   |    regslice_both_out_data_13_last_V_U  |regslice_both__parameterized1_157 |     9|
+|485   |      ibuf_inst                         |ibuf__parameterized1_389          |     4|
+|486   |      obuf_inst                         |obuf__parameterized1_390          |     5|
+|487   |    regslice_both_out_data_13_strb_V_U  |regslice_both__parameterized0_158 |    18|
+|488   |      ibuf_inst                         |ibuf__parameterized0_387          |    10|
+|489   |      obuf_inst                         |obuf__parameterized0_388          |     8|
+|490   |    regslice_both_out_data_13_user_V_U  |regslice_both__parameterized1_159 |     9|
+|491   |      ibuf_inst                         |ibuf__parameterized1_385          |     4|
+|492   |      obuf_inst                         |obuf__parameterized1_386          |     5|
+|493   |    regslice_both_out_data_14_data_V_U  |regslice_both_160                 |   106|
+|494   |      ibuf_inst                         |ibuf_383                          |    65|
+|495   |      obuf_inst                         |obuf_384                          |    36|
+|496   |    regslice_both_out_data_14_dest_V_U  |regslice_both__parameterized1_161 |     9|
+|497   |      ibuf_inst                         |ibuf__parameterized1_381          |     4|
+|498   |      obuf_inst                         |obuf__parameterized1_382          |     5|
+|499   |    regslice_both_out_data_14_id_V_U    |regslice_both__parameterized1_162 |     9|
+|500   |      ibuf_inst                         |ibuf__parameterized1_379          |     4|
+|501   |      obuf_inst                         |obuf__parameterized1_380          |     5|
+|502   |    regslice_both_out_data_14_keep_V_U  |regslice_both__parameterized0_163 |    18|
+|503   |      ibuf_inst                         |ibuf__parameterized0_377          |    10|
+|504   |      obuf_inst                         |obuf__parameterized0_378          |     8|
+|505   |    regslice_both_out_data_14_last_V_U  |regslice_both__parameterized1_164 |     9|
+|506   |      ibuf_inst                         |ibuf__parameterized1_375          |     4|
+|507   |      obuf_inst                         |obuf__parameterized1_376          |     5|
+|508   |    regslice_both_out_data_14_strb_V_U  |regslice_both__parameterized0_165 |    18|
+|509   |      ibuf_inst                         |ibuf__parameterized0_373          |    10|
+|510   |      obuf_inst                         |obuf__parameterized0_374          |     8|
+|511   |    regslice_both_out_data_14_user_V_U  |regslice_both__parameterized1_166 |     9|
+|512   |      ibuf_inst                         |ibuf__parameterized1_371          |     4|
+|513   |      obuf_inst                         |obuf__parameterized1_372          |     5|
+|514   |    regslice_both_out_data_15_data_V_U  |regslice_both_167                 |   106|
+|515   |      ibuf_inst                         |ibuf_369                          |    66|
+|516   |      obuf_inst                         |obuf_370                          |    36|
+|517   |    regslice_both_out_data_15_dest_V_U  |regslice_both__parameterized1_168 |     9|
+|518   |      ibuf_inst                         |ibuf__parameterized1_367          |     4|
+|519   |      obuf_inst                         |obuf__parameterized1_368          |     5|
+|520   |    regslice_both_out_data_15_id_V_U    |regslice_both__parameterized1_169 |     9|
+|521   |      ibuf_inst                         |ibuf__parameterized1_365          |     4|
+|522   |      obuf_inst                         |obuf__parameterized1_366          |     5|
+|523   |    regslice_both_out_data_15_keep_V_U  |regslice_both__parameterized0_170 |    18|
+|524   |      ibuf_inst                         |ibuf__parameterized0_363          |    10|
+|525   |      obuf_inst                         |obuf__parameterized0_364          |     8|
+|526   |    regslice_both_out_data_15_last_V_U  |regslice_both__parameterized1_171 |     9|
+|527   |      ibuf_inst                         |ibuf__parameterized1_361          |     4|
+|528   |      obuf_inst                         |obuf__parameterized1_362          |     5|
+|529   |    regslice_both_out_data_15_strb_V_U  |regslice_both__parameterized0_172 |    18|
+|530   |      ibuf_inst                         |ibuf__parameterized0_359          |    10|
+|531   |      obuf_inst                         |obuf__parameterized0_360          |     8|
+|532   |    regslice_both_out_data_15_user_V_U  |regslice_both__parameterized1_173 |     9|
+|533   |      ibuf_inst                         |ibuf__parameterized1_357          |     4|
+|534   |      obuf_inst                         |obuf__parameterized1_358          |     5|
+|535   |    regslice_both_out_data_1_data_V_U   |regslice_both_174                 |   108|
+|536   |      ibuf_inst                         |ibuf_355                          |    68|
+|537   |      obuf_inst                         |obuf_356                          |    36|
+|538   |    regslice_both_out_data_1_dest_V_U   |regslice_both__parameterized1_175 |     9|
+|539   |      ibuf_inst                         |ibuf__parameterized1_353          |     4|
+|540   |      obuf_inst                         |obuf__parameterized1_354          |     5|
+|541   |    regslice_both_out_data_1_id_V_U     |regslice_both__parameterized1_176 |     9|
+|542   |      ibuf_inst                         |ibuf__parameterized1_351          |     4|
+|543   |      obuf_inst                         |obuf__parameterized1_352          |     5|
+|544   |    regslice_both_out_data_1_keep_V_U   |regslice_both__parameterized0_177 |    18|
+|545   |      ibuf_inst                         |ibuf__parameterized0_349          |    10|
+|546   |      obuf_inst                         |obuf__parameterized0_350          |     8|
+|547   |    regslice_both_out_data_1_last_V_U   |regslice_both__parameterized1_178 |     9|
+|548   |      ibuf_inst                         |ibuf__parameterized1_347          |     4|
+|549   |      obuf_inst                         |obuf__parameterized1_348          |     5|
+|550   |    regslice_both_out_data_1_strb_V_U   |regslice_both__parameterized0_179 |    18|
+|551   |      ibuf_inst                         |ibuf__parameterized0_345          |    10|
+|552   |      obuf_inst                         |obuf__parameterized0_346          |     8|
+|553   |    regslice_both_out_data_1_user_V_U   |regslice_both__parameterized1_180 |     9|
+|554   |      ibuf_inst                         |ibuf__parameterized1_343          |     4|
+|555   |      obuf_inst                         |obuf__parameterized1_344          |     5|
+|556   |    regslice_both_out_data_2_data_V_U   |regslice_both_181                 |   105|
+|557   |      ibuf_inst                         |ibuf_341                          |    65|
+|558   |      obuf_inst                         |obuf_342                          |    36|
+|559   |    regslice_both_out_data_2_dest_V_U   |regslice_both__parameterized1_182 |     9|
+|560   |      ibuf_inst                         |ibuf__parameterized1_339          |     4|
+|561   |      obuf_inst                         |obuf__parameterized1_340          |     5|
+|562   |    regslice_both_out_data_2_id_V_U     |regslice_both__parameterized1_183 |     9|
+|563   |      ibuf_inst                         |ibuf__parameterized1_337          |     4|
+|564   |      obuf_inst                         |obuf__parameterized1_338          |     5|
+|565   |    regslice_both_out_data_2_keep_V_U   |regslice_both__parameterized0_184 |    18|
+|566   |      ibuf_inst                         |ibuf__parameterized0_335          |    10|
+|567   |      obuf_inst                         |obuf__parameterized0_336          |     8|
+|568   |    regslice_both_out_data_2_last_V_U   |regslice_both__parameterized1_185 |     9|
+|569   |      ibuf_inst                         |ibuf__parameterized1_333          |     4|
+|570   |      obuf_inst                         |obuf__parameterized1_334          |     5|
+|571   |    regslice_both_out_data_2_strb_V_U   |regslice_both__parameterized0_186 |    18|
+|572   |      ibuf_inst                         |ibuf__parameterized0_331          |    10|
+|573   |      obuf_inst                         |obuf__parameterized0_332          |     8|
+|574   |    regslice_both_out_data_2_user_V_U   |regslice_both__parameterized1_187 |     9|
+|575   |      ibuf_inst                         |ibuf__parameterized1_329          |     4|
+|576   |      obuf_inst                         |obuf__parameterized1_330          |     5|
+|577   |    regslice_both_out_data_3_data_V_U   |regslice_both_188                 |   105|
+|578   |      ibuf_inst                         |ibuf_327                          |    65|
+|579   |      obuf_inst                         |obuf_328                          |    36|
+|580   |    regslice_both_out_data_3_dest_V_U   |regslice_both__parameterized1_189 |     9|
+|581   |      ibuf_inst                         |ibuf__parameterized1_325          |     4|
+|582   |      obuf_inst                         |obuf__parameterized1_326          |     5|
+|583   |    regslice_both_out_data_3_id_V_U     |regslice_both__parameterized1_190 |     9|
+|584   |      ibuf_inst                         |ibuf__parameterized1_323          |     4|
+|585   |      obuf_inst                         |obuf__parameterized1_324          |     5|
+|586   |    regslice_both_out_data_3_keep_V_U   |regslice_both__parameterized0_191 |    18|
+|587   |      ibuf_inst                         |ibuf__parameterized0_321          |    10|
+|588   |      obuf_inst                         |obuf__parameterized0_322          |     8|
+|589   |    regslice_both_out_data_3_last_V_U   |regslice_both__parameterized1_192 |     9|
+|590   |      ibuf_inst                         |ibuf__parameterized1_319          |     4|
+|591   |      obuf_inst                         |obuf__parameterized1_320          |     5|
+|592   |    regslice_both_out_data_3_strb_V_U   |regslice_both__parameterized0_193 |    18|
+|593   |      ibuf_inst                         |ibuf__parameterized0_317          |    10|
+|594   |      obuf_inst                         |obuf__parameterized0_318          |     8|
+|595   |    regslice_both_out_data_3_user_V_U   |regslice_both__parameterized1_194 |     9|
+|596   |      ibuf_inst                         |ibuf__parameterized1_315          |     4|
+|597   |      obuf_inst                         |obuf__parameterized1_316          |     5|
+|598   |    regslice_both_out_data_4_data_V_U   |regslice_both_195                 |   105|
+|599   |      ibuf_inst                         |ibuf_313                          |    65|
+|600   |      obuf_inst                         |obuf_314                          |    36|
+|601   |    regslice_both_out_data_4_dest_V_U   |regslice_both__parameterized1_196 |     9|
+|602   |      ibuf_inst                         |ibuf__parameterized1_311          |     4|
+|603   |      obuf_inst                         |obuf__parameterized1_312          |     5|
+|604   |    regslice_both_out_data_4_id_V_U     |regslice_both__parameterized1_197 |     9|
+|605   |      ibuf_inst                         |ibuf__parameterized1_309          |     4|
+|606   |      obuf_inst                         |obuf__parameterized1_310          |     5|
+|607   |    regslice_both_out_data_4_keep_V_U   |regslice_both__parameterized0_198 |    18|
+|608   |      ibuf_inst                         |ibuf__parameterized0_307          |    10|
+|609   |      obuf_inst                         |obuf__parameterized0_308          |     8|
+|610   |    regslice_both_out_data_4_last_V_U   |regslice_both__parameterized1_199 |     9|
+|611   |      ibuf_inst                         |ibuf__parameterized1_305          |     4|
+|612   |      obuf_inst                         |obuf__parameterized1_306          |     5|
+|613   |    regslice_both_out_data_4_strb_V_U   |regslice_both__parameterized0_200 |    18|
+|614   |      ibuf_inst                         |ibuf__parameterized0_303          |    10|
+|615   |      obuf_inst                         |obuf__parameterized0_304          |     8|
+|616   |    regslice_both_out_data_4_user_V_U   |regslice_both__parameterized1_201 |     9|
+|617   |      ibuf_inst                         |ibuf__parameterized1_301          |     4|
+|618   |      obuf_inst                         |obuf__parameterized1_302          |     5|
+|619   |    regslice_both_out_data_5_data_V_U   |regslice_both_202                 |   105|
+|620   |      ibuf_inst                         |ibuf_299                          |    65|
+|621   |      obuf_inst                         |obuf_300                          |    36|
+|622   |    regslice_both_out_data_5_dest_V_U   |regslice_both__parameterized1_203 |     9|
+|623   |      ibuf_inst                         |ibuf__parameterized1_297          |     4|
+|624   |      obuf_inst                         |obuf__parameterized1_298          |     5|
+|625   |    regslice_both_out_data_5_id_V_U     |regslice_both__parameterized1_204 |     9|
+|626   |      ibuf_inst                         |ibuf__parameterized1_295          |     4|
+|627   |      obuf_inst                         |obuf__parameterized1_296          |     5|
+|628   |    regslice_both_out_data_5_keep_V_U   |regslice_both__parameterized0_205 |    18|
+|629   |      ibuf_inst                         |ibuf__parameterized0_293          |    10|
+|630   |      obuf_inst                         |obuf__parameterized0_294          |     8|
+|631   |    regslice_both_out_data_5_last_V_U   |regslice_both__parameterized1_206 |     9|
+|632   |      ibuf_inst                         |ibuf__parameterized1_291          |     4|
+|633   |      obuf_inst                         |obuf__parameterized1_292          |     5|
+|634   |    regslice_both_out_data_5_strb_V_U   |regslice_both__parameterized0_207 |    18|
+|635   |      ibuf_inst                         |ibuf__parameterized0_289          |    10|
+|636   |      obuf_inst                         |obuf__parameterized0_290          |     8|
+|637   |    regslice_both_out_data_5_user_V_U   |regslice_both__parameterized1_208 |     9|
+|638   |      ibuf_inst                         |ibuf__parameterized1_287          |     4|
+|639   |      obuf_inst                         |obuf__parameterized1_288          |     5|
+|640   |    regslice_both_out_data_6_data_V_U   |regslice_both_209                 |   106|
+|641   |      ibuf_inst                         |ibuf_285                          |    65|
+|642   |      obuf_inst                         |obuf_286                          |    36|
+|643   |    regslice_both_out_data_6_dest_V_U   |regslice_both__parameterized1_210 |     9|
+|644   |      ibuf_inst                         |ibuf__parameterized1_283          |     4|
+|645   |      obuf_inst                         |obuf__parameterized1_284          |     5|
+|646   |    regslice_both_out_data_6_id_V_U     |regslice_both__parameterized1_211 |     9|
+|647   |      ibuf_inst                         |ibuf__parameterized1_281          |     4|
+|648   |      obuf_inst                         |obuf__parameterized1_282          |     5|
+|649   |    regslice_both_out_data_6_keep_V_U   |regslice_both__parameterized0_212 |    18|
+|650   |      ibuf_inst                         |ibuf__parameterized0_279          |    10|
+|651   |      obuf_inst                         |obuf__parameterized0_280          |     8|
+|652   |    regslice_both_out_data_6_last_V_U   |regslice_both__parameterized1_213 |     9|
+|653   |      ibuf_inst                         |ibuf__parameterized1_277          |     4|
+|654   |      obuf_inst                         |obuf__parameterized1_278          |     5|
+|655   |    regslice_both_out_data_6_strb_V_U   |regslice_both__parameterized0_214 |    18|
+|656   |      ibuf_inst                         |ibuf__parameterized0_275          |    10|
+|657   |      obuf_inst                         |obuf__parameterized0_276          |     8|
+|658   |    regslice_both_out_data_6_user_V_U   |regslice_both__parameterized1_215 |     9|
+|659   |      ibuf_inst                         |ibuf__parameterized1_273          |     4|
+|660   |      obuf_inst                         |obuf__parameterized1_274          |     5|
+|661   |    regslice_both_out_data_7_data_V_U   |regslice_both_216                 |   106|
+|662   |      ibuf_inst                         |ibuf_271                          |    66|
+|663   |      obuf_inst                         |obuf_272                          |    36|
+|664   |    regslice_both_out_data_7_dest_V_U   |regslice_both__parameterized1_217 |     9|
+|665   |      ibuf_inst                         |ibuf__parameterized1_269          |     4|
+|666   |      obuf_inst                         |obuf__parameterized1_270          |     5|
+|667   |    regslice_both_out_data_7_id_V_U     |regslice_both__parameterized1_218 |     9|
+|668   |      ibuf_inst                         |ibuf__parameterized1_267          |     4|
+|669   |      obuf_inst                         |obuf__parameterized1_268          |     5|
+|670   |    regslice_both_out_data_7_keep_V_U   |regslice_both__parameterized0_219 |    18|
+|671   |      ibuf_inst                         |ibuf__parameterized0_265          |    10|
+|672   |      obuf_inst                         |obuf__parameterized0_266          |     8|
+|673   |    regslice_both_out_data_7_last_V_U   |regslice_both__parameterized1_220 |     9|
+|674   |      ibuf_inst                         |ibuf__parameterized1_263          |     4|
+|675   |      obuf_inst                         |obuf__parameterized1_264          |     5|
+|676   |    regslice_both_out_data_7_strb_V_U   |regslice_both__parameterized0_221 |    18|
+|677   |      ibuf_inst                         |ibuf__parameterized0_261          |    10|
+|678   |      obuf_inst                         |obuf__parameterized0_262          |     8|
+|679   |    regslice_both_out_data_7_user_V_U   |regslice_both__parameterized1_222 |     9|
+|680   |      ibuf_inst                         |ibuf__parameterized1_259          |     4|
+|681   |      obuf_inst                         |obuf__parameterized1_260          |     5|
+|682   |    regslice_both_out_data_8_data_V_U   |regslice_both_223                 |   109|
+|683   |      ibuf_inst                         |ibuf_257                          |    65|
+|684   |      obuf_inst                         |obuf_258                          |    36|
+|685   |    regslice_both_out_data_8_dest_V_U   |regslice_both__parameterized1_224 |     9|
+|686   |      ibuf_inst                         |ibuf__parameterized1_255          |     4|
+|687   |      obuf_inst                         |obuf__parameterized1_256          |     5|
+|688   |    regslice_both_out_data_8_id_V_U     |regslice_both__parameterized1_225 |     9|
+|689   |      ibuf_inst                         |ibuf__parameterized1_253          |     4|
+|690   |      obuf_inst                         |obuf__parameterized1_254          |     5|
+|691   |    regslice_both_out_data_8_keep_V_U   |regslice_both__parameterized0_226 |    18|
+|692   |      ibuf_inst                         |ibuf__parameterized0_251          |    10|
+|693   |      obuf_inst                         |obuf__parameterized0_252          |     8|
+|694   |    regslice_both_out_data_8_last_V_U   |regslice_both__parameterized1_227 |     9|
+|695   |      ibuf_inst                         |ibuf__parameterized1_249          |     4|
+|696   |      obuf_inst                         |obuf__parameterized1_250          |     5|
+|697   |    regslice_both_out_data_8_strb_V_U   |regslice_both__parameterized0_228 |    18|
+|698   |      ibuf_inst                         |ibuf__parameterized0_247          |    10|
+|699   |      obuf_inst                         |obuf__parameterized0_248          |     8|
+|700   |    regslice_both_out_data_8_user_V_U   |regslice_both__parameterized1_229 |     9|
+|701   |      ibuf_inst                         |ibuf__parameterized1_245          |     4|
+|702   |      obuf_inst                         |obuf__parameterized1_246          |     5|
+|703   |    regslice_both_out_data_9_data_V_U   |regslice_both_230                 |   106|
+|704   |      ibuf_inst                         |ibuf                              |    65|
+|705   |      obuf_inst                         |obuf                              |    36|
+|706   |    regslice_both_out_data_9_dest_V_U   |regslice_both__parameterized1_231 |     9|
+|707   |      ibuf_inst                         |ibuf__parameterized1_243          |     4|
+|708   |      obuf_inst                         |obuf__parameterized1_244          |     5|
+|709   |    regslice_both_out_data_9_id_V_U     |regslice_both__parameterized1_232 |     9|
+|710   |      ibuf_inst                         |ibuf__parameterized1_241          |     4|
+|711   |      obuf_inst                         |obuf__parameterized1_242          |     5|
+|712   |    regslice_both_out_data_9_keep_V_U   |regslice_both__parameterized0_233 |    18|
+|713   |      ibuf_inst                         |ibuf__parameterized0_239          |    10|
+|714   |      obuf_inst                         |obuf__parameterized0_240          |     8|
+|715   |    regslice_both_out_data_9_last_V_U   |regslice_both__parameterized1_234 |     9|
+|716   |      ibuf_inst                         |ibuf__parameterized1_237          |     4|
+|717   |      obuf_inst                         |obuf__parameterized1_238          |     5|
+|718   |    regslice_both_out_data_9_strb_V_U   |regslice_both__parameterized0_235 |    18|
+|719   |      ibuf_inst                         |ibuf__parameterized0              |    10|
+|720   |      obuf_inst                         |obuf__parameterized0              |     8|
+|721   |    regslice_both_out_data_9_user_V_U   |regslice_both__parameterized1_236 |     9|
+|722   |      ibuf_inst                         |ibuf__parameterized1              |     4|
+|723   |      obuf_inst                         |obuf__parameterized1              |     5|
++------+----------------------------------------+----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 2252.102 ; gain = 448.762 ; free physical = 2435 ; free virtual = 14787
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:39 . Memory (MB): peak = 2252.102 ; gain = 277.145 ; free physical = 2464 ; free virtual = 14816
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 2252.102 ; gain = 448.762 ; free physical = 2463 ; free virtual = 14815
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2252.102 ; gain = 0.000 ; free physical = 2403 ; free virtual = 14756
+INFO: [Netlist 29-17] Analyzing 128 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2252.102 ; gain = 0.000 ; free physical = 2257 ; free virtual = 14609
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+50 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:52 . Memory (MB): peak = 2252.102 ; gain = 705.637 ; free physical = 2377 ; free virtual = 14730
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2252.102 ; gain = 0.000 ; free physical = 2376 ; free virtual = 14728
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.runs/vector_add_1_mult_constant_0_0_synth_1/vector_add_1_mult_constant_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP vector_add_1_mult_constant_0_0, cache-ID = 897903aebf126f20
+INFO: [Coretcl 2-1174] Renamed 722 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2276.113 ; gain = 0.000 ; free physical = 1952 ; free virtual = 14315
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/jounghoolee/alveoServer/Xilinx/PynqDeepDive/final_project/final_project.runs/vector_add_1_mult_constant_0_0_synth_1/vector_add_1_mult_constant_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file vector_add_1_mult_constant_0_0_utilization_synth.rpt -pb vector_add_1_mult_constant_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Oct  3 13:43:42 2020...
